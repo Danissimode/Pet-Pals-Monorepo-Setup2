@@ -1,0 +1,35 @@
+{
+  "name": "pet-pals",
+  "version": "1.0.0",
+  "description": "Monorepo for Pet Pals project",
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "lint": "turbo run lint",
+    "format": "prettier --write .",
+    "test": "turbo run test"
+  },
+  "keywords": [
+    "monorepo",
+    "react-native",
+    "expo",
+    "tailwind",
+    "nativewind"
+  ],
+  "author": "Your Name",
+  "license": "ISC",
+  "devDependencies": {
+    "turbo": "^1.10.16",
+    "prettier": "^3.0.3"
+  },
+  "dependencies": {
+    "nativewind": "^4.0.2"
+  },
+  "pnpm": {
+    "peerDependencyRules": {
+      "ignoreMissing": [
+        "react-native-web"
+      ]
+    }
+  }
+}
